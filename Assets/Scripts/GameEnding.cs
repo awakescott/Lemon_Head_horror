@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class GameEnding : MonoBehaviour
 {
-    public float fadeDuration = 1f; //How long the screen takes to fade to black.
+    public float fadeDuration = 1f; //How long it takes for the gameover screen to fade in.
+    public float displayImageDuration = 1f; //How long the gameover screen displays before the game actually ends.
     public GameObject player; //The game will only end if John Lemon himself enters the trigger collider.
     public CanvasGroup exitBackgroundImageCanvasGroup; //Reference to the UI (Canvas)
 
     bool m_IsPlayerAtExit; //This boolean is a way to know when to start fading the UI
     float m_Timer; //A timer is needed to ensure that the game doesn't end before the fade is completed.
 
-    void OnTriigerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Okay1");
         //To check that John Lemon is what/who collided with the trigger.
         if(other.gameObject == player)
         {
             m_IsPlayerAtExit = true;
+            Debug.Log("Okay2");
         }
     }
 
@@ -34,5 +37,10 @@ public class GameEnding : MonoBehaviour
     {
         m_Timer += Time.deltaTime;
         exitBackgroundImageCanvasGroup.alpha = m_Timer / fadeDuration;
+
+        if(m_Timer > fadeDuration + displayImageDuration)
+        {
+            Application.Quit(); //Reminder: This only works when playing the built version of the game (doesn't stop play mode in the editor).
+        }
     }
 }
