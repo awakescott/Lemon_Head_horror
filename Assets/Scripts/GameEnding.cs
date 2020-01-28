@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameEnding : MonoBehaviour
 {
@@ -9,7 +10,10 @@ public class GameEnding : MonoBehaviour
     public GameObject player; //The game will only end if John Lemon himself enters the trigger collider.
     public CanvasGroup exitBackgroundImageCanvasGroup; //Reference to the UI (Canvas)
 
+    public CanvasGroup caughtBackgroundImageCanvasGroup; //Reference to UI if caught
+
     bool m_IsPlayerAtExit; //This boolean is a way to know when to start fading the UI
+    bool m_IsPlayerCaught; //Checks if John Lemon has been caught by enemies
     float m_Timer; //A timer is needed to ensure that the game doesn't end before the fade is completed.
 
     void OnTriggerEnter(Collider other)
@@ -28,19 +32,31 @@ public class GameEnding : MonoBehaviour
     {
         if (m_IsPlayerAtExit)
         {
-            EndLevel();
+            EndLevel(exitBackgroundImageCanvasGroup, false);
+        }
+        else if(m_IsPlayerCaught)
+        {
+            EndLevel(caughtBackgroundImageCanvasGroup, true);
         }
     }
 
     //Fades the screen then quits the game
-    void EndLevel()
+    void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart)
     {
         m_Timer += Time.deltaTime;
-        exitBackgroundImageCanvasGroup.alpha = m_Timer / fadeDuration;
+        imageCanvasGroup.alpha = m_Timer / fadeDuration;
 
         if(m_Timer > fadeDuration + displayImageDuration)
         {
-            Application.Quit(); //Reminder: This only works when playing the built version of the game (doesn't stop play mode in the editor).
+            if(doRestart)
+            {
+                SceneManager.LoadScene(0);
+            }
+            else
+            {
+                Application.Quit(); //Reminder: This only works when playing the built version of the game (doesn't stop play mode in the editor).
+            }
+            
         }
     }
 }
