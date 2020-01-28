@@ -5,7 +5,7 @@ using UnityEngine;
 public class Observer : MonoBehaviour
 {
     public Transform player;
-    //public GameEnding gameEnding;
+    public GameEnding gameEnding;
     bool isPlayerInRange;
 
     private void OnTriggerEnter(Collider other)
@@ -41,6 +41,7 @@ public class Observer : MonoBehaviour
                 {
                     //gameEnding.CaughtPlayer();
                     Debug.Log("Player caught");
+                    gameEnding.CaughtPlayer();
                 }
             }
         }

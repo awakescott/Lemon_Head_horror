@@ -27,6 +27,11 @@ public class GameEnding : MonoBehaviour
         }
     }
 
+    public void CaughtPlayer()
+    {
+        m_IsPlayerCaught = true;
+    }
+
     //Checks if John Lemon is has reached the end of the level (by touching the trigger)
     void Update()
     {
