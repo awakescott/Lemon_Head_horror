@@ -205,8 +205,6 @@ MonoBehaviour:
     m_OnCameraLive:
       m_PersistentCalls:
         m_Calls: []
-      m_TypeName: Cinemachine.CinemachineBrain+VcamActivatedEvent, Cinemachine, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1553530175}
 --- !u!4 &93644076
@@ -461,7 +459,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848750510}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -606,7 +604,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848750510}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -794,8 +792,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 623a7345ca6d38f4280b86c32ffe7c15, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -981,7 +977,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848750510}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -1066,7 +1062,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848750510}
     - target: {fileID: 6212056917241529453, guid: f5ea5c08ab9c9124d8d768b19f3cd1b3,
         type: 3}
       propertyPath: gameEnding
@@ -1166,7 +1162,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848750510}
     - target: {fileID: 6212056917241529453, guid: f5ea5c08ab9c9124d8d768b19f3cd1b3,
         type: 3}
       propertyPath: gameEnding
@@ -1244,8 +1240,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1385,7 +1379,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848750510}
     - target: {fileID: 6212056917241529453, guid: f5ea5c08ab9c9124d8d768b19f3cd1b3,
         type: 3}
       propertyPath: gameEnding
@@ -1515,7 +1509,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848750510}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -1630,7 +1624,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848750510}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -5107,7 +5101,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848750510}
     - target: {fileID: 6212056917241529453, guid: f5ea5c08ab9c9124d8d768b19f3cd1b3,
         type: 3}
       propertyPath: gameEnding
@@ -5237,7 +5231,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848750510}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -5322,7 +5316,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848750510}
     - target: {fileID: 6212056917241529453, guid: f5ea5c08ab9c9124d8d768b19f3cd1b3,
         type: 3}
       propertyPath: gameEnding
@@ -5406,8 +5400,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 85d46c7add1129741a0d78fadba6998e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -5483,8 +5475,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -5851,13 +5841,9 @@ MonoBehaviour:
   m_CameraCutEvent:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Cinemachine.CinemachineBrain+BrainEvent, Cinemachine, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Cinemachine.CinemachineBrain+VcamActivatedEvent, Cinemachine, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &2024179362
 MonoBehaviour:
   m_ObjectHideFlags: 0
