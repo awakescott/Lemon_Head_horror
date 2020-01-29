@@ -149,7 +149,6 @@ Transform:
   m_Children:
   - {fileID: 1705087645}
   - {fileID: 942927329}
-  - {fileID: 1954306596}
   - {fileID: 1312667957}
   - {fileID: 963411874}
   - {fileID: 1767549708}
@@ -192,7 +191,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 1848750509}
+  m_Follow: {fileID: 1848750510}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 10
@@ -462,7 +461,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1848750509}
+      objectReference: {fileID: 0}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -607,7 +606,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1848750509}
+      objectReference: {fileID: 0}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -982,7 +981,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1848750509}
+      objectReference: {fileID: 0}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -1067,7 +1066,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1848750509}
+      objectReference: {fileID: 0}
     - target: {fileID: 6212056917241529453, guid: f5ea5c08ab9c9124d8d768b19f3cd1b3,
         type: 3}
       propertyPath: gameEnding
@@ -1167,7 +1166,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1848750509}
+      objectReference: {fileID: 0}
     - target: {fileID: 6212056917241529453, guid: f5ea5c08ab9c9124d8d768b19f3cd1b3,
         type: 3}
       propertyPath: gameEnding
@@ -1386,7 +1385,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1848750509}
+      objectReference: {fileID: 0}
     - target: {fileID: 6212056917241529453, guid: f5ea5c08ab9c9124d8d768b19f3cd1b3,
         type: 3}
       propertyPath: gameEnding
@@ -1516,7 +1515,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1848750509}
+      objectReference: {fileID: 0}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -1631,7 +1630,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1848750509}
+      objectReference: {fileID: 0}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -5108,7 +5107,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1848750509}
+      objectReference: {fileID: 0}
     - target: {fileID: 6212056917241529453, guid: f5ea5c08ab9c9124d8d768b19f3cd1b3,
         type: 3}
       propertyPath: gameEnding
@@ -5238,7 +5237,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1848750509}
+      objectReference: {fileID: 0}
     - target: {fileID: 5867250776996855236, guid: 41aba8602f2b6344f90678c6208161a2,
         type: 3}
       propertyPath: gameEnding
@@ -5323,7 +5322,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1848750509}
+      objectReference: {fileID: 0}
     - target: {fileID: 6212056917241529453, guid: f5ea5c08ab9c9124d8d768b19f3cd1b3,
         type: 3}
       propertyPath: gameEnding
@@ -5639,7 +5638,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0acd09a798ca06c458969f5ff9f1dabb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-
+  turnSpeed: 20
+--- !u!4 &1848750510 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7886314016906397525, guid: 06a1580157aaac34787018dca99a89bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1848750504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1961259456
 GameObject:
   m_ObjectHideFlags: 0
