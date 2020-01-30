@@ -7,6 +7,7 @@ public class GameEnding : MonoBehaviour
 {
     public float fadeDuration = 1f; //How long it takes for the gameover screen to fade in.
     public float displayImageDuration = 1f; //How long the gameover screen displays before the game actually ends.
+
     public GameObject player; //The game will only end if John Lemon himself enters the trigger collider.
     public CanvasGroup exitBackgroundImageCanvasGroup; //Reference to the UI (Canvas)
     public AudioSource exitAudio;
@@ -20,18 +21,20 @@ public class GameEnding : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Okay1");
+        Debug.Log("Safe");
         //To check that John Lemon is what/who collided with the trigger.
         if(other.gameObject == player)
         {
             m_IsPlayerAtExit = true;
-            Debug.Log("Okay2");
+            Debug.Log("Reached Exit");
+
         }
     }
 
     public void CaughtPlayer()
     {
         m_IsPlayerCaught = true;
+        Debug.Log("Start Over");
     }
 
     //Checks if John Lemon is has reached the end of the level (by touching the trigger)
