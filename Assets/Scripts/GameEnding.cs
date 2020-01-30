@@ -20,18 +20,19 @@ public class GameEnding : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Okay1");
+        Debug.Log("Safe");
         //To check that John Lemon is what/who collided with the trigger.
         if(other.gameObject == player)
         {
             m_IsPlayerAtExit = true;
-            Debug.Log("Okay2");
+            Debug.Log("Finished");
         }
     }
 
     public void CaughtPlayer()
     {
         m_IsPlayerCaught = true;
+        Debug.Log("Start Over")
     }
 
     //Checks if John Lemon is has reached the end of the level (by touching the trigger)
