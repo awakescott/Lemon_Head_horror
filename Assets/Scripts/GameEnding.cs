@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameEnding : MonoBehaviour
 {
-    public float fadeDuration = 1f; //How long it takes for the gameover screen to fade in.
-    public float displayImageDuration = 1f; //How long the gameover screen displays before the game actually ends.
+    public float fadeDuration = 1.5f; //How long it takes for the gameover screen to fade in.
+    public float displayImageDuration = 1.5f; //How long the gameover screen displays before the game actually ends.
     public GameObject player; //The game will only end if John Lemon himself enters the trigger collider.
     public CanvasGroup exitBackgroundImageCanvasGroup; //Reference to the UI (Canvas)
     public AudioSource exitAudio;
