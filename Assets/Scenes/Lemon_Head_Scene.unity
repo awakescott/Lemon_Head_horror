@@ -283,14 +283,11 @@ MonoBehaviour:
   displayImageDuration: 1
   player: {fileID: 1848750505}
   exitBackgroundImageCanvasGroup: {fileID: 1836949070}
-<<<<<<< HEAD
   caughtBackgroundImageCanvasGroup: {fileID: 1234674812}
 --- !u!1 &112526545
-=======
   exitAudio: {fileID: 717781384}
   caughtAudio: {fileID: 990323458}
 --- !u!1 &394454132
->>>>>>> Daniel-Audio
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,31 +295,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 112526546}
   m_Layer: 0
   m_Name: Waypoint (1)
-=======
   - component: {fileID: 394454133}
   m_Layer: 0
   m_Name: Audio
->>>>>>> Daniel-Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!4 &112526546
-=======
 --- !u!4 &394454133
->>>>>>> Daniel-Audio
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 112526545}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.5, y: 0, z: -4.5}
@@ -635,7 +625,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 332613812}
   m_PrefabAsset: {fileID: 0}
-=======
   m_GameObject: {fileID: 394454132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.171335, y: -17.871164, z: 55.389}
@@ -647,7 +636,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Daniel-Audio
 --- !u!1 &456525042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,8 +1686,6 @@ Transform:
   m_Father: {fileID: 168545558}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2124,7 +2110,6 @@ Transform:
   m_Father: {fileID: 394454133}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Daniel-Audio
 --- !u!1 &1553530174
 GameObject:
   m_ObjectHideFlags: 3
@@ -6029,7 +6014,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 7886314016899147965, guid: 06a1580157aaac34787018dca99a89bc,
         type: 3}
       propertyPath: m_Controller
@@ -6037,9 +6021,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 8d715f9c89c90474d8405097a29d38af, type: 2}
     m_RemovedComponents:
     - {fileID: 4228760798885189309, guid: 06a1580157aaac34787018dca99a89bc, type: 3}
-=======
     m_RemovedComponents: []
->>>>>>> Daniel-Audio
   m_SourcePrefab: {fileID: 100100000, guid: 06a1580157aaac34787018dca99a89bc, type: 3}
 --- !u!1 &1848750505 stripped
 GameObject:
@@ -6047,7 +6029,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1848750504}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!54 &1848750506
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6092,9 +6073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 20
 --- !u!4 &1848750510 stripped
-=======
 --- !u!4 &1848750509 stripped
->>>>>>> Daniel-Audio
 Transform:
   m_CorrespondingSourceObject: {fileID: 7886314016906397525, guid: 06a1580157aaac34787018dca99a89bc,
     type: 3}

@@ -37,24 +37,18 @@ public class GameEnding : MonoBehaviour
     {
         if (m_IsPlayerAtExit)
         {
-<<<<<<< HEAD
             EndLevel(exitBackgroundImageCanvasGroup, false);
         }
         else if(m_IsPlayerCaught)
         {
             EndLevel(caughtBackgroundImageCanvasGroup, true);
-=======
             EndLevel(exitBackgroundImageCanvasGroup, false, exitAudio);
->>>>>>> Daniel-Audio
         }
     }
 
     //Fades the screen then quits the game
-<<<<<<< HEAD
     void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart)
-=======
     void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart, AudioSource audioSource)
->>>>>>> Daniel-Audio
     {
         if (!m_HasAudioPlayed)
         {
