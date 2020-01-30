@@ -9,21 +9,21 @@ public class GameEnding : MonoBehaviour
     public float displayImageDuration = 1f; //How long the gameover screen displays before the game actually ends.
     public GameObject player; //The game will only end if John Lemon himself enters the trigger collider.
     public CanvasGroup exitBackgroundImageCanvasGroup; //Reference to the UI (Canvas)
+    public AudioSource exitAudio, caughtAudio;
 
     public CanvasGroup caughtBackgroundImageCanvasGroup; //Reference to UI if caught
 
     bool m_IsPlayerAtExit; //This boolean is a way to know when to start fading the UI
     bool m_IsPlayerCaught; //Checks if John Lemon has been caught by enemies
     float m_Timer; //A timer is needed to ensure that the game doesn't end before the fade is completed.
+    bool m_HasAudioPlayed;
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Okay1");
         //To check that John Lemon is what/who collided with the trigger.
         if(other.gameObject == player)
         {
             m_IsPlayerAtExit = true;
-            Debug.Log("Okay2");
         }
     }
 
@@ -42,12 +42,20 @@ public class GameEnding : MonoBehaviour
         else if(m_IsPlayerCaught)
         {
             EndLevel(caughtBackgroundImageCanvasGroup, true);
+            EndLevel(exitBackgroundImageCanvasGroup, false, exitAudio);
         }
     }
 
     //Fades the screen then quits the game
     void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart)
+    void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart, AudioSource audioSource)
     {
+        if (!m_HasAudioPlayed)
+        {
+            audioSource.Play();
+            m_HasAudioPlayed = true;
+        }
+
         m_Timer += Time.deltaTime;
         imageCanvasGroup.alpha = m_Timer / fadeDuration;
 
