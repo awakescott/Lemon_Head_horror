@@ -25,13 +25,14 @@ public class GameEnding : MonoBehaviour
         if(other.gameObject == player)
         {
             m_IsPlayerAtExit = true;
-            Debug.Log("Okay2");
+            Debug.Log("Reached Exit");
         }
     }
 
     public void CaughtPlayer()
     {
         m_IsPlayerCaught = true;
+        Debug.Log("Player Caught");
     }
 
     //Checks if John Lemon is has reached the end of the level (by touching the trigger)
